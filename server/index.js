@@ -26,7 +26,7 @@ store.on("error", function (error) {
 
 app.use(
   cors({
-    origin: "https://parakh-theta.vercel.app/",
+    origin: "https://parakh-store.vercel.app",
     credentials: true,
   })
 );
