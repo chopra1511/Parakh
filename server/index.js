@@ -49,6 +49,10 @@ app.use(
   })
 );
 
+app.get("https://parakh-api.vercel.app/",(req,res) => {
+  res.send("Parakh")
+});
+
 app.use(authRoutes.routes);
 app.use(storeRoutes.routes);
 app.use(cartRoutes.routes);
