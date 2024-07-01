@@ -11,29 +11,19 @@ const storeRoutes = require("./routes/store");
 const cartRoutes = require("./routes/cart");
 const paymentRoutes = require("./routes/payment");
 
-const PORT = process.env.PORT || 8000;
-
 const app = express();
+
+// Middlewares
+app.use(
+  cors({ origin: ["https://parakh-frontend.vercel.app"], credentials: true })
+);
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 const store = new MongoDBStore({
   uri: process.env.MONGODB_URI,
   collection: "sessions",
 });
-
-store.on("error", function (error) {
-  console.log("Session store error:", error);
-});
-
-app.use(
-  cors({
-    origin: ["https://parakh-store.vercel.app"],
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    credentials: true,
-  })
-);
-
-app.use(bodyParser.json({ limit: "50mb" }));
-app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 
 app.use(
   session({
@@ -49,10 +39,6 @@ app.use(
   })
 );
 
-app.get("https://parakh-api.vercel.app/",(req,res) => {
-  res.send("Parakh")
-});
-
 app.use(authRoutes.routes);
 app.use(storeRoutes.routes);
 app.use(cartRoutes.routes);
@@ -61,10 +47,10 @@ app.use(paymentRoutes.routes);
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
-    app.listen(PORT, () => {
-      console.log(`Connected! and running on port ${PORT}`);
-    });
+    console.log("Connected to MongoDB");
   })
   .catch((err) => {
     console.log(err);
   });
+
+module.exports = app;
