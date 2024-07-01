@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-const base_URL = "http://localhost:8080";
+const base_URL = "https://parakh-api.vercel.app";
 
 export const addToCart = createAsyncThunk(
   "cart/addToCart",

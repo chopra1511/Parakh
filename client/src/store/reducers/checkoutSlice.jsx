@@ -1,12 +1,12 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-const base_URL = "http://localhost:8080";
+const base_URL = "https://parakh-api.vercel.app";
 
 export const createOrder = createAsyncThunk(
   "order/createOrder",
   async (_, { rejectWithValue }) => {
     try {
-      const response = await fetch(`const base_URL = "http://localhost:8080";/cart-checkout`, {
+      const response = await fetch(`${base_URL}/cart-checkout`, {
         method: "GET",
       });
       const result = await response.json();
