@@ -27,6 +27,7 @@ store.on("error", function (error) {
 app.use(
   cors({
     origin: ["https://parakh-store.vercel.app"],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
   })
 );
