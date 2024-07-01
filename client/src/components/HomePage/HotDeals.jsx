@@ -1,4 +1,4 @@
-import diamond from "../../assets/diamond.png";
+import diamond from "/assets/diamond.png";
 import { useNavigate } from "react-router";
 import Button from "@mui/material/Button";
 import { IconButton } from "@mui/material";

@@ -1,7 +1,7 @@
-import rings from "../../assets/rings.png";
-import pearl from "../../assets/pearl.png";
-import earrings from "../../assets/earrings.png";
-import diamond from "../../assets/diamond.png";
+import rings from "/assets/rings.png";
+import pearl from "/assets/pearl.png";
+import earrings from "/assets/earrings.png";
+import diamond from "/assets/diamond.png";
 import { useNavigate } from "react-router";
 
 const ProductSection = () => {

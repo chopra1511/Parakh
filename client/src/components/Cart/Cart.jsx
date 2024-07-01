@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import NavBar from "../NavBar/NavBar";
-import empty from "../../assets/empty.gif";
+import empty from "/assets/empty.gif";
 import Button from "@mui/material/Button";
-import diamond from "../../assets/diamond.png";
+import diamond from "/assets/diamond.png";
 import { useNavigate } from "react-router";
 import { IconButton } from "@mui/material";
 import EmptyCart from "./EmptyCart";

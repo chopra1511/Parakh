@@ -1,5 +1,5 @@
-import wishlist from "../../assets/wishlist.png";
-import pinkHeart from "../../assets/pinkHeart.png";
+import wishlist from "/assets/wishlist.png";
+import pinkHeart from "/assets/pinkHeart.png";
 import "@flaticon/flaticon-uicons/css/all/all.css";
 import ProductsDisplay from "../All_Products/ProductsDisplay";
 import { useSelector } from "react-redux";

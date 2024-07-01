@@ -1,5 +1,5 @@
-import diamond from "../../assets/diamond.png";
-import heart from "../../assets/heart.png";
+import diamond from "/assets/diamond.png";
+import heart from "/assets/heart.png";
 import "@flaticon/flaticon-uicons/css/all/all.css";
 import ProductsDisplay from "./ProductsDisplay";
 import { useSelector } from "react-redux";

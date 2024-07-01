@@ -1,5 +1,5 @@
 import React from "react";
-import empty from "../../assets/empty.gif";
+import empty from "/assets/empty.gif";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router";
 

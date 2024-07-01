@@ -1,5 +1,5 @@
 import React from "react";
-import d from "../../assets/d.jpg";
+import d from "/assets/d.jpg";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import CircleRoundedIcon from "@mui/icons-material/CircleRounded";

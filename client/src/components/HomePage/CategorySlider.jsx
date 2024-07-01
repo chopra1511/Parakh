@@ -1,5 +1,5 @@
 import React from "react";
-import c from "../../assets/c.png";
+import c from "/assets/c.png";
 
 const CategorySlider = () => {
 

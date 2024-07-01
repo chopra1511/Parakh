@@ -1,7 +1,7 @@
 import NavBar from "../NavBar/NavBar";
 import FooterNav from "../NavBar/FooterNav";
 import Footer from "../HomePage/Footer";
-import account from "../../assets/account.png";
+import account from "/assets/account.png";
 import Button from "@mui/material/Button";
 import { useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";

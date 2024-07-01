@@ -1,7 +1,7 @@
 import NavBar from "../NavBar/NavBar";
 import FooterNav from "../NavBar/FooterNav";
 import Footer from "../HomePage/Footer";
-import telephone from "../../assets/telephone.png";
+import telephone from "/assets/telephone.png";
 import Button from "@mui/material/Button";
 import Checkbox from "@mui/material/Checkbox";
 import { useEffect } from "react";
